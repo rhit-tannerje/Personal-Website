@@ -8,14 +8,20 @@ body {
 }
 
 .nav-bar {
+  height: 40px;
   display: flex;
   justify-content: space-around;
   vertical-align: middle;
+  align-items: center;
   background-color: gainsboro;
   align-items: center;
   color: darkgray;
   font-size: 13px;
   font-weight: 500;
+}
+
+.nav-bar h1 {
+  padding: 0px;
 }
 
 .nav-bar a:link {
@@ -38,12 +44,10 @@ body {
   padding-top: 20px;
   width: 200px;
   height: 200px;
-  border-image: radial-gradient(red, orange);
 }
 
 .container, #main-page {
   display: flex;
-  
 }
 
 h1, h2, h3, p {
@@ -62,6 +66,7 @@ ul, li {
 footer {
   display: flex;
   justify-content: space-between;
+  height: 60px;
   /*Used this site to figure out how to make footer at bottom of screen: https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
   left: 0;
   bottom: 0;
@@ -70,8 +75,12 @@ footer {
   background-color: gainsboro;
   align-items: center;
   color: darkslategray;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 500;
+}
+
+footer h1 {
+  padding: 0px;
 }
 
 footer a:link {
@@ -102,4 +111,13 @@ footer a:visited {
   align-items: center;
   justify-content: center;
   background-color: darkcyan;
+}
+
+#gradient {
+  padding:0%;
+  margin: 90;
+  width: 5%;
+  height: 55%;
+  /*I think this is my cool css thing. Wanted to make a cool shape on the side so I made a polygon from mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape/polygon*/
+  clip-path: polygon(0% 0%, 100% 0%, 40% 90%, 0% 90%);
 }
