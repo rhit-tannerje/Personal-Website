@@ -1,6 +1,6 @@
 :root {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: whitesmoke;
+  background-color: #f9f9f9;
 }
 
 body {
@@ -18,10 +18,16 @@ body {
   font-weight: 500;
 }
 
+.nav-bar a:link {
+  color: pink;
+  text-decoration: none;
+}
+
 .nav-bar a:hover {
   background-color: darkgray;
   color: black;
 }
+
 
 #prof-image {
   display: block;
@@ -32,11 +38,10 @@ body {
 }
 
 .container, #main-page {
-  display: flex;
-  justify-content: center;
+  display: grid;
 }
 
-h1, h3 {
+h1, h3, p {
   margin: 15px;
   padding-left: 15px;
   padding-top: 20px;
@@ -47,4 +52,19 @@ ul, li {
   /*https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position Found how to move bullet points with padding from mdn*/
   list-style-position: inside;
   margin-top: 0px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  /*Used this site to figure out how to make footer at bottom of screen: https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  background-color: gainsboro;
+  align-items: center;
+  color: darkgray;
+  font-size: 13px;
+  font-weight: 500;
 }
