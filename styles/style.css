@@ -19,7 +19,7 @@ body {
 }
 
 .nav-bar a:link {
-  color: pink;
+  color: darkslategray;
   text-decoration: none;
 }
 
@@ -28,6 +28,9 @@ body {
   color: black;
 }
 
+.nav-bar a:visited {
+  color: orange;
+}
 
 #prof-image {
   display: block;
@@ -35,13 +38,15 @@ body {
   padding-top: 20px;
   width: 200px;
   height: 200px;
+  border-image: radial-gradient(red, orange);
 }
 
 .container, #main-page {
-  display: grid;
+  display: flex;
+  
 }
 
-h1, h3, p {
+h1, h2, h3, p {
   margin: 15px;
   padding-left: 15px;
   padding-top: 20px;
@@ -64,7 +69,37 @@ footer {
   position: fixed;
   background-color: gainsboro;
   align-items: center;
-  color: darkgray;
+  color: darkslategray;
   font-size: 13px;
   font-weight: 500;
+}
+
+footer a:link {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+footer a:hover {
+  background-color: darkgray;
+  color: black;
+}
+
+footer a:visited {
+  color: orange;
+}
+
+#technologies {
+  padding-left: 15px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 180px 120px 120px;
+  gap: 5px;
+  align-items: center;
+}
+
+#technologies > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkcyan;
 }
