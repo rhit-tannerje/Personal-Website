@@ -7,21 +7,24 @@ body {
   margin: 0px;
 }
 
+*, ::after, ::before {
+  box-sizing: content-box;
+}
+
 .nav-bar {
-  height: 40px;
   display: flex;
   justify-content: space-around;
   vertical-align: middle;
-  align-items: center;
   background-color: gainsboro;
   align-items: center;
   color: darkgray;
-  font-size: 13px;
-  font-weight: 500;
+  overflow: hidden;
 }
 
-.nav-bar h1 {
+.nav-bar h1 { /*Have to override the bootstrap styling*/
   padding: 0px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .nav-bar a:link {
@@ -75,12 +78,12 @@ footer {
   background-color: gainsboro;
   align-items: center;
   color: darkslategray;
-  font-size: 10px;
-  font-weight: 500;
 }
 
 footer h1 {
   padding: 0px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 footer a:link {
@@ -113,11 +116,11 @@ footer a:visited {
   background-color: darkcyan;
 }
 
-#gradient {
-  padding:0%;
-  margin: 90;
-  width: 5%;
-  height: 55%;
-  /*I think this is my cool css thing. Wanted to make a cool shape on the side so I made a polygon from mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape/polygon*/
-  clip-path: polygon(0% 0%, 100% 0%, 40% 90%, 0% 90%);
+#carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height:300px;
+  margin: auto;
 }
